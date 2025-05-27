@@ -172,7 +172,7 @@ class GoogleDriveService {
   }
 
   // Create or get the notes folder
-  private async getNotesFolderId(): Promise<string> {
+  private async getNotesFolderId(): Promise<string | null> {
     if (this.notesFolder) {
       return this.notesFolder;
     }
